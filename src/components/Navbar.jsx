@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import { assets } from "../assets/frontend_assets/assets";
 import { useContext, useState } from "react";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
@@ -15,7 +14,7 @@ export const Navbar = () => {
   
   const [visable, setVisable] = useState(false);
   return (
-    <div className="flex justify-between items-center p-3 border-b border-gray-300">
+    <div className="stickey flex justify-between items-center p-3 border-b border-gray-300">
       <Link to="/">
         <p className="text-xl font-bold " >CLOTHES SHOP</p>
       </Link>
