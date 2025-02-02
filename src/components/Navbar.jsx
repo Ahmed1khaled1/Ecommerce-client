@@ -14,9 +14,9 @@ export const Navbar = () => {
   
   const [visable, setVisable] = useState(false);
   return (
-    <div className="stickey flex justify-between items-center p-3 border-b border-gray-300">
+    <div className="sticky top-0 bg-white z-50 flex justify-between items-center p-3 border-b border-gray-300">
       <Link to="/">
-        <p className="text-xl font-bold " >CLOTHES SHOP</p>
+        <p className="text-xl font-bold ">CLOTHES SHOP</p>
       </Link>
       <ul className="hidden md:flex gap-5">
         <NavLink to="/" className="flex flex-col items-center">
@@ -39,13 +39,14 @@ export const Navbar = () => {
       <div className="flex gap-5 items-center">
         <SearchOutlinedIcon
           className=" cursor-pointer"
-          onClick={() => {setShowSearch(!showSearch)
-            navigate("/collection")
+          onClick={() => {
+            setShowSearch(!showSearch);
+            navigate("/collection");
           }}
         />
         <div className=" relative">
           <PersonOutlineOutlinedIcon
-            onClick={() => navigate('/login')}
+            onClick={() => navigate("/login")}
             className="w-5 cursor-pointer "
           />
         </div>
